@@ -1,0 +1,4 @@
+{
+    "api_key": "<YOUR-TOGETHERAI-API-KEY>",
+    "model": "google/gemma-2-27b-it"
+}
