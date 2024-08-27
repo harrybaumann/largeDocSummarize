@@ -52,10 +52,11 @@ def main():
         responses.append(compressed_text_response)
 
     full_response = "\n---\n".join(responses)
-    summary_system_prompt = "Please give a detailed overview of the following text, list the main \
-        points and answer in german."
+    summary_system_prompt = "Please give an overview of the compressed text you get, list the main \
+        points and group them by category. Answer in german."
+
     summary = call_endpoint(summary_system_prompt, full_response)
-    print(f"\nSUMMARY:\n{summary}")
+    print(f"\n{summary}")
 
 if __name__ == "__main__":
     main()
